@@ -15,9 +15,9 @@ const quickLinks = [
   },
   {
     icon: HelpCircle,
-    title: "FAQ",
-    description: "Perguntas frequentes",
-    url: "#"
+    title: "Portal NIS2 Portugal",
+    description: "Conformidade e recursos",
+    url: "https://nis2-portugal.com/"
   }
 ];
 
