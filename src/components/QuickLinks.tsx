@@ -10,8 +10,8 @@ const quickLinks = [
   {
     icon: Scale,
     title: "Transposição Nacional",
-    description: "Legislação portuguesa",
-    url: "#"
+    description: "DL 125/2025, 4 Dezembro",
+    url: "https://diariodarepublica.pt/dr/detalhe/decreto-lei/125-2025-962603401"
   },
   {
     icon: HelpCircle,
