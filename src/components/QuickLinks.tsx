@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ExternalLink, FileText, HelpCircle, Scale, FolderOpen } from "lucide-react";
+import { ExternalLink, FileText, Scale } from "lucide-react";
 
 interface QuickLink {
   icon: typeof FileText;
@@ -21,19 +21,6 @@ const quickLinks: QuickLink[] = [
     title: "Transposição Nacional",
     description: "DL 125/2025, 4 Dezembro",
     url: "https://diariodarepublica.pt/dr/detalhe/decreto-lei/125-2025-962603401"
-  },
-  {
-    icon: HelpCircle,
-    title: "FAQ NIS2",
-    description: "Perguntas frequentes",
-    url: "https://nis2directive.eu/frequently-asked-question-about-nis2-directive/"
-  },
-  {
-    icon: FolderOpen,
-    title: "Templates",
-    description: "Biblioteca de recursos",
-    url: "/templates",
-    isInternal: true
   }
 ];
 
@@ -44,7 +31,7 @@ const QuickLinks = () => {
         Recursos Úteis
       </h3>
       
-      <div className="grid md:grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
         {quickLinks.map((link, index) => {
           const Icon = link.icon;
           
