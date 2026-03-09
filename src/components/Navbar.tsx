@@ -40,12 +40,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="p-2 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
-              <Shield className="w-5 h-5 text-primary" />
+            <div className={`p-2 rounded-xl transition-colors ${scrolled ? 'bg-primary/10 group-hover:bg-primary/20' : 'bg-white/15 group-hover:bg-white/25'}`}>
+              <Shield className={`w-5 h-5 ${scrolled ? 'text-primary' : 'text-white'}`} />
             </div>
             <div className="hidden sm:block">
-              <span className="font-bold text-foreground text-sm leading-tight block">NIS2 Portugal</span>
-              <span className="text-xs text-muted-foreground">DL 125/2025</span>
+              <span className={`font-bold text-sm leading-tight block ${scrolled ? 'text-foreground' : 'text-white'}`}>NIS2 Portugal</span>
+              <span className={`text-xs ${scrolled ? 'text-muted-foreground' : 'text-white/70'}`}>DL 125/2025</span>
             </div>
           </Link>
 
